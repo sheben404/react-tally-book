@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import React from 'react';
 import styled from 'styled-components';
 import {TagsSection} from './Money/TagsSection';
-import {NotesSection} from './Money/NotesSection';
+import {NoteSection} from './Money/NoteSection';
 import {CategorySection} from './Money/CategorySection';
 import {NumberPadSection} from './Money/NumberPadSection';
 
@@ -15,15 +15,9 @@ function Money() {
   return (
     <MyLayout>
       <TagsSection/>
-      <NotesSection>
-
-      </NotesSection>
-      <CategorySection>
-
-      </CategorySection>
-      <NumberPadSection>
-
-      </NumberPadSection>
+      <NoteSection/>
+      <CategorySection/>
+      <NumberPadSection/>
     </MyLayout>
   );
 }
