@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link, NavLink} from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import React from 'react';
 import Icon from './Icon';
 
@@ -29,7 +29,6 @@ const Nav = () => {
     <NavWrapper>
       <ul>
         <li>
-
           <NavLink to="/tags" activeClassName='active'>
             <Icon name='tag'/>
             标签页
