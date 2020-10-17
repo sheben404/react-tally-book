@@ -33,3 +33,11 @@ button{
   height: 24px;
   width: 24px;
 }
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix{
+  zoom: 1;
+}
