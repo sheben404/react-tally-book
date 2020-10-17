@@ -12,10 +12,12 @@ const NavWrapper = styled.nav`
     > li{
       width: 33.3%;
       text-align: center;
-      padding: 4px;
-      display:flex;
-      flex-direction: column;
-      align-items: center;
+      > a{
+        padding: 4px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
  }
 `
@@ -24,16 +26,25 @@ const Nav = () => {
     <NavWrapper>
       <ul>
         <li>
-          <Icon name='tag'/>
-          <Link to="/tags">标签页</Link>
+
+          <Link to="/tags">
+            <Icon name='tag'/>
+            标签页
+          </Link>
         </li>
         <li>
-          <Icon name='money'/>
-          <Link to="/money">记账页</Link>
+
+          <Link to="/money">
+            <Icon name='money'/>
+            记账页
+          </Link>
         </li>
         <li>
-          <Icon name='statistic'/>
-          <Link to="/statistics">统计页</Link>
+
+          <Link to="/statistics">
+            <Icon name='statistic'/>
+            统计页
+          </Link>
         </li>
       </ul>
     </NavWrapper>
