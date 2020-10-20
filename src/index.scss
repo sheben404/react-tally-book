@@ -41,3 +41,8 @@ button{
 .clearfix{
   zoom: 1;
 }
+.oneLine{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
