@@ -5,7 +5,7 @@ type RecordItem = {
   tagIds: number[],
   note: string,
   category: '+' | '-',
-  amount: number,
+  amount: string,
   createAt: string // ISO 8601
 }
 type newRecordItem = Omit<RecordItem, 'createAt'>
@@ -19,7 +19,7 @@ export const useRecords = () => {
     window.localStorage.setItem('records', JSON.stringify(records));
   }, [records]);
   const addRecord = (newRecord: newRecordItem) => {
-    if(newRecord.amount<=0){
+    if(parseFloat(newRecord.amount)<=0){
       return alert('金额不能为0')
     }
     const record = {...newRecord, createAt: (new Date()).toISOString()};

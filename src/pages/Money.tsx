@@ -18,7 +18,7 @@ const defaultFormData = {
   tagIds: [] as number[],
   note: '',
   category: '-' as Category,
-  amount: 0
+  amount: '0'
 }
 function Money() {
   const [selected, setSelected] = useState(defaultFormData);
@@ -35,8 +35,6 @@ function Money() {
   };
   return (
     <MyLayout>
-      {JSON.stringify(selected)}
-      <hr/>
       <TagsSection value={selected.tagIds}
                    onChange={tagIds => onChange({tagIds})}/>
       <NoteSection value={selected.note}
