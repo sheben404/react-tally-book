@@ -1,6 +1,7 @@
 {
   "name": "react-demo-morney",
   "version": "0.1.0",
+  "homepage": "http://sheben404.github.io/react-tally-book/build",
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",

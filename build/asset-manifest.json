@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-tally-book/build/static/css/main.22e2ebde.chunk.css",
+    "main.js": "/react-tally-book/build/static/js/main.9b8f2483.chunk.js",
+    "main.js.map": "/react-tally-book/build/static/js/main.9b8f2483.chunk.js.map",
+    "runtime-main.js": "/react-tally-book/build/static/js/runtime-main.1e686f78.js",
+    "runtime-main.js.map": "/react-tally-book/build/static/js/runtime-main.1e686f78.js.map",
+    "static/js/2.8f2769c9.chunk.js": "/react-tally-book/build/static/js/2.8f2769c9.chunk.js",
+    "static/js/2.8f2769c9.chunk.js.map": "/react-tally-book/build/static/js/2.8f2769c9.chunk.js.map",
+    "index.html": "/react-tally-book/build/index.html",
+    "precache-manifest.454059e10baeb8f3e03f49b5f5f81091.js": "/react-tally-book/build/precache-manifest.454059e10baeb8f3e03f49b5f5f81091.js",
+    "service-worker.js": "/react-tally-book/build/service-worker.js",
+    "static/css/main.22e2ebde.chunk.css.map": "/react-tally-book/build/static/css/main.22e2ebde.chunk.css.map",
+    "static/js/2.8f2769c9.chunk.js.LICENSE.txt": "/react-tally-book/build/static/js/2.8f2769c9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e686f78.js",
+    "static/js/2.8f2769c9.chunk.js",
+    "static/css/main.22e2ebde.chunk.css",
+    "static/js/main.9b8f2483.chunk.js"
+  ]
+}
