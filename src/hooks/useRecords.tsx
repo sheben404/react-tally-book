@@ -17,7 +17,7 @@ export const useRecords = () => {
   }, []);
   useUpdate(() => {
     window.localStorage.setItem('records', JSON.stringify(records));
-  }, [records]);
+  }, records);
   const addRecord = (newRecord: newRecordItem) => {
     if(parseFloat(newRecord.amount)<=0){
       return alert('金额不能为0')
