@@ -11,6 +11,9 @@ const MyLayout = styled(Layout)`
   display: flex;
   flex-direction: column;
 `;
+const CategoryWrapper = styled.div`
+background: #c4c4c4;
+`
 
 type Category = '-' | '+'
 
@@ -19,7 +22,8 @@ const defaultFormData = {
   note: '',
   category: '-' as Category,
   amount: '0'
-}
+};
+
 function Money() {
   const [selected, setSelected] = useState(defaultFormData);
   const onChange = (obj: Partial<typeof selected>) => {
@@ -31,7 +35,7 @@ function Money() {
   const {addRecord} = useRecords();
   const submit = () => {
     addRecord(selected);
-    setSelected(defaultFormData)
+    setSelected(defaultFormData);
   };
   return (
     <MyLayout>
@@ -39,8 +43,10 @@ function Money() {
                    onChange={tagIds => onChange({tagIds})}/>
       <NoteSection value={selected.note}
                    onChange={note => onChange({note})}/>
-      <CategorySection value={selected.category}
-                       onChange={category => onChange({category})}/>
+      <CategoryWrapper>
+        <CategorySection value={selected.category}
+                         onChange={category => onChange({category})}/>
+      </CategoryWrapper>
       <NumberPadSection value={selected.amount}
                         onChange={amount => onChange({amount})}
                         onOk={submit}

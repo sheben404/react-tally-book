@@ -22,6 +22,9 @@ export const useRecords = () => {
     if(parseFloat(newRecord.amount)<=0){
       return alert('金额不能为0')
     }
+    if(newRecord.tagIds.length<=0){
+      return alert('请选择标签')
+    }
     const record = {...newRecord, createAt: (new Date()).toISOString()};
     setRecords([...records, record]);
     alert('保存成功')
